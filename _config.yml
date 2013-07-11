@@ -9,14 +9,14 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : geraldbaeck.github.com
+title : geraldbaeck.github.io
 tagline: Blogging about things, I should not forget
 author :
   name : Gerald Bäck
   email : gerald@baeck.at
   github : geraldbaeck
   twitter : geraldbaeck
-  feedburner : feedname
+  feedburner : Geraldbaeckgithubcom
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +25,7 @@ author :
 # If you have set a CNAME (pages.github.com) set your custom domain here.
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
+
 production_url : http://geraldbaeck.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
