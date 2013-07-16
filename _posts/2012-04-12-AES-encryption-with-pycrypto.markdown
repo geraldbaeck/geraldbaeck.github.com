@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AES encryption with pycrypto"
-date:   2012-04-12 08:33:58
+date:   2012-04-12
 categories: python
 tags: python encryption
 ---

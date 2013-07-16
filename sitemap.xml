@@ -17,7 +17,7 @@ title : XML sitemap
   {% for post in site.posts %}
   <url>
     <loc>{{site.production_url}}{{ post.url }}</loc>
-    {% if page.last_updated %}
+    {% if post.last_updated %}
     <lastmod>{{ post.last_updated | date: "%Y-%m-%d" }}</lastmod>
     {% elsif page.date %}
     <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
