@@ -6,7 +6,6 @@ title : XML sitemap
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!--  Homepage -->
   <url>
     <loc>{{site.production_url}}/</loc>
     <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
@@ -19,7 +18,7 @@ title : XML sitemap
     <loc>{{site.production_url}}{{ post.url }}</loc>
     {% if post.last_updated %}
     <lastmod>{{ post.last_updated | date: "%Y-%m-%d" }}</lastmod>
-    {% elsif page.date %}
+    {% elsif post.date %}
     <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
     {% else %}
     <lastmod>{{ post.time | date: "%Y-%m-%d" }}</lastmod>
