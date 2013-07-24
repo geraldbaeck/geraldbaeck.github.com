@@ -33,7 +33,7 @@ Now, configure a your favorite hosts in the ssh_config file
 {% highlight bash %}
 Host example
 HostName example.com
-Port 4431
+Port 667
 User username
 IdentityFile ~/.ssh/id_rsa
 
@@ -49,4 +49,10 @@ You can write this:
 
 {% highlight bash %}
 ssh example
+{% endhighlight %}
+
+As a small benefit this also works with scp.
+
+{% highlight bash %}
+scp /path/to/some/file example
 {% endhighlight %}
