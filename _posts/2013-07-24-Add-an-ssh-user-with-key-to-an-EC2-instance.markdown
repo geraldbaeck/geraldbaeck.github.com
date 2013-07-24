@@ -17,7 +17,7 @@ scp -i root *.pub ec2-your-instance-name.compute.amazonaws.com:/tmp
 {% endhighlight %}
 Log in to the instance as root. For each user you are creating, add the user to your instance with the
 {% highlight bash %}
-useradd -c "firstname lastname" user
+sudo adduser user
 {% endhighlight %}
 For simplicity's sake, use the same "user" name as you did for key generation. Now we need to place the key into their ssh authorized keys file (replacing "user" with the username you chose earlier)
 {% highlight bash %}
