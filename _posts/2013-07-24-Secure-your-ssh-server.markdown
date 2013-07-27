@@ -113,7 +113,7 @@ So how to do it? Just edit the line "Port 22" in your /etc/ssh/sshd_config file
 
 ###Optional: Set up a Firewall (iptables){#iptables}
 
-You should be pretty save right now, but what about us paranoid people, who believe that the NSA is looking into everything? Oh wait, they are. Maybe it is a good idea to add another line of defense: An iptables firewall.
+You should be pretty save right now, but what about us paranoid people, who believe that the NSA is looking into everything? Oh wait, they are. Maybe it is a good idea to add another line of defense: An iptables firewall. I would not recommend this if your server is running on EC2, because amazon already has very easy to handle firewall their so called Security Groups builtin.
 
 Check your default firewall rules by entering the following command:
 {% highlight bash %}
