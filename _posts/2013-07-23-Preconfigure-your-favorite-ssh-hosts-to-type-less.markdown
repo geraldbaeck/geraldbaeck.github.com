@@ -46,7 +46,6 @@ ssh -i ~/.ssh/id_rsa -p 4431 username@example.com
 {% endhighlight %}
 
 You can write this:
-
 {% highlight bash %}
 ssh example
 {% endhighlight %}
@@ -55,4 +54,26 @@ As a small benefit this also works with scp.
 
 {% highlight bash %}
 scp /path/to/some/file example
+{% endhighlight %}
+
+Now let's tunnel. If you are used to write this, to make a connection to a remote mySQL database
+
+{% highlight bash %}
+ssh -f -N -i ~/.ssh/id_rsa -L 9906:127.0.0.1:3306 username@database.example.com
+# -f puts ssh in background 
+# -N makes it not execute a remote command 
+{% endhighlight %}
+
+You should consider modifying your config like this:
+{% highlight bash %}
+Host tunnel
+HostName database.example.com
+IdentityFile ~/.ssh/id_rsa
+LocalForward 9906 127.0.0.1:3306
+User username
+{% endhighlight %}
+
+To be able to finally establish a tunnel with this command:
+{% highlight bash %}
+ssh -f -N tunnel
 {% endhighlight %}
