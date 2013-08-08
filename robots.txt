@@ -1,4 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /archive.html
+Disallow: /tags.html
+Disallow: /pages.html
+Disallow: /categories.html
 
 Sitemap: http://dev.baeck.at/sitemap.xml
+Host: dev.baeck.at
