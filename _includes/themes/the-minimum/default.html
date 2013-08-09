@@ -19,14 +19,6 @@
 		<div class="unit-head">
 			<div class="unit-inner unit-head-inner">
 				<p class="logo"><a href="{{ HOME_PATH }}">{{ site.title }}</a></p>
-				<nav class="nav-global">
-					<ul>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-					</ul>
-				</nav>
 			</div><!-- unit-inner -->
 		</div><!-- unit-head -->
 	</header>
@@ -40,21 +32,27 @@
 		</div><!-- unit-body -->
 	</div><!-- body -->
 	<footer class="the-footer">
+		<hr>
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
-					<h4>about</h4>
+					<address><span class="author fn n">{{ site.author.name }}</span> - <a class="fn email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></address>
 					<ul>
-						<li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
-						<li class="github"><a href="https://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+						<li class="github first"><a href="https://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
 						<li class="twitter"><a href="https://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedburner }}">Subscribe to RSS Feed</a></li>
+						<li class="facebook"><a href="https://www.facebook.com/{{ site.author.facebook }}/" rel="me">facebook.com/{{ site.author.facebook }}</a></li>
+						<li class="googleplus"><a href="{{ site.author.googleplus }}/" rel="me">google+</a></li>
+						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedburner }}">feed</a></li>
 					</ul>
 				</div><!-- misc -->
-				<p class="licence">
-					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
-					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
-				</p>
+				<nav>
+					<ul>
+						<li class="archive first"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+					</ul>
+				</nav>
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
 	</footer>
