@@ -54,7 +54,7 @@ h6 {
   font-weight: bold;
 }
 h1, .h1 {
-  font-size: 18px;
+  font-size: 19px;
 }
 h2, .h2 {
   font-size: 17px;
@@ -98,6 +98,9 @@ ul.posts li span {
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
   color: #aaa;
+}
+ul.posts li {
+  line-height: 1.625em;
 }
 /*
 Color schemes
@@ -211,7 +214,11 @@ pre {
   background-repeat: no-repeat;
   font-family: junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
   margin: 0;
-  padding-left:36px;
+  padding-left:38px;
+}
+.the-header .logo a {
+  position: relative;
+  bottom: 5px;
 }
 /* MAIN
 --------------------------------------------------------------------------------- */
