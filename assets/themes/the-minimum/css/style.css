@@ -93,6 +93,7 @@ em {
 }
 ul.posts {
   list-style: none  !important; 
+  padding-left: 0;
 }
 ul.posts li span {
   font-family: Monaco, "Courier New", monospace;
@@ -500,7 +501,7 @@ pre {
 }
 .the-footer ul {
   list-style: none;
-  padding-left: 1em;
+  padding-left: 0;
   font-size: 12px;
   margin-bottom: 0;
 }
