@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Python use MySQL column names instead of numbers"
-date:   2013-08-08
+date:   2013-09-27
 categories: python
 ---
 {% include JB/setup %}
