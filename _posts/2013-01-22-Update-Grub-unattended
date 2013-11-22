@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Update Grub unattended"
+date:   2013-11-22
+categories: python
+tags: python encryption
+---
+{% include JB/setup %}
+
+Automizing stuff with vagrant is awesome. But it has some traps. For example if you try to update your Ubuntu installation there is pretty good chance that something needs your attendence. Chances are very high that a new version of grub whants to ask you broing questions, but this messes up the whole idea of automisation, right? Not enough this messes the vagrant installation up and show very strange characters in your console like this
+
+{% highlight bash %}
+ C⎺└⎻␋┌␊␍ R␊⎽⎺┤⎼␌␊:
+------------------
+# D␊␌┌▒⎼␊␍ ␋┼ /┴▒⎼/␌␤␊°/␌▒␌␤␊/␌⎺⎺┐␉⎺⎺┐⎽/␌⎺└└⎺┼-⎽⎺°├┬▒⎼␊/⎼␊␌␋⎻␊⎽/␍␊°▒┤┌├.⎼␉:49:␋┼ ◆°⎼⎺└_°␋┌␊'
+
+␊│␊␌┤├␊("▒⎻├-±␊├-┤⎻±⎼▒␍␊-≤") ␍⎺
+  ⎼␊├┤⎼┼⎽ 0
+  ␌⎺└└▒┼␍ "▒⎻├-±␊├ ┤⎻±⎼▒␍␊ -≤"
+  ▒␌├␋⎺┼ "⎼┤┼"
+  ⎼␊␌␋⎻␊_┼▒└␊ "␍␊°▒┤┌├"
+  ⎼␊├⎼≤_␍␊┌▒≤ 2
+  ␌⎺⎺┐␉⎺⎺┐_┼▒└␊ "␌⎺└└⎺┼-⎽⎺°├┬▒⎼␊"
+  ␉▒␌┐┤⎻ 5
+  ⎼␊├⎼␋␊⎽ 0
+␊┼␍
+{% endhighlight %}
+
+There is an easy way to get rid of that, just upadte your system like this:
+
+{% highlight bash %}
+DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade
+{% endhighlight %}
