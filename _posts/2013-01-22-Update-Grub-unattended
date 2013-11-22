@@ -2,8 +2,8 @@
 layout: post
 title:  "Update Grub unattended"
 date:   2013-11-22
-categories: python
-tags: python encryption
+categories: sysadmin
+tags: vagrant grub apt
 ---
 {% include JB/setup %}
 
