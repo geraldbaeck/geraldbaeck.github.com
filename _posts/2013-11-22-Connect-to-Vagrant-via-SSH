@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Connect to Vagrant via SSH"
+date:   2013-11-22
+categories: sysadmin
+tags: vagrant ssh
+---
+{% include JB/setup %}
+
+Connecting via the console to vagrant is easy just type:
+
+{% highlight bash %}
+vagrant ssh
+{% endhighlight %}
+
+But you can also do this by hand of course:
+
+{% highlight bash %}
+SSH Host: 127.0.0.1
+SSH User: vagrant
+SSH Key: ~/.vagrant.d/insecureprivatekey
+SSH Port: 2222
+{% endhighlight %}
