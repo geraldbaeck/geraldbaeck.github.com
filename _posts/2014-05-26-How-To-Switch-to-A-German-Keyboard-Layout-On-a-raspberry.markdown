@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Switch to a german keyboard layout on a Raspberry"
-date:   2014-04-05
+date:   2014-05-26
 categories: raspberry
 tags: raspberry, keyboard, linux, german
 ---
