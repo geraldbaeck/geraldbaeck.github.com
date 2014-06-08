@@ -9,18 +9,18 @@ tags: raspberry, keyboard, linux, german
 
 Open up a shell and type
 
-{% highlight shell %}
+{% highlight bash %}
   sudo nano /etc/default/keyboard
 {% endhighlight %}
 
 find where it says
 
-{% highlight shell %}
+{% highlight bash %}
   XKBLAYOUT=”gb”
 {% endhighlight %}
 
 change it to:
-{% highlight shell %}
+{% highlight bash %}
   XKBLAYOUT=”de”
 {% endhighlight %}
 
